@@ -1,0 +1,43 @@
+.svg_wrapper{
+    font-size: 1em;
+    width: 26em;
+    height: 26em;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.message_parent {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 13em;
+    height: auto;
+    padding: 10px;  
+    overflow-y: auto;
+}
+
+.message_parent div {
+    border: 1.9px solid #BDCCD4;
+    background-color: #A0CC3B;
+    padding: 10px 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 27px;
+    transition: all 0.4 ease-out;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 350ms;
+    animation-delay: 250ms;
+    animation-fill-mode: both;
+    cursor: pointer;
+    color: white;
+}
+@media screen and (max-width:480px) {
+     .svg_wrapper {
+        font-size: .68em;
+    }
+    .message_parent {
+        font-size: 0.68em;
+    }
+}
